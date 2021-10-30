@@ -1,6 +1,19 @@
 @import url(https://unpkg.com/@webpixels/css@1.0/dist/index.css);
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
+section{
+    min-height: 100vh;
+}
+
+video{
+    display: block;
+    margin: auto;
+}
+
+main{
+    background-color: whitesmoke;
+}
+
 header{
     position: fixed;
     top: 0px;
@@ -8,36 +21,8 @@ header{
     z-index: 2;
 }
 
-.heading{
-    font-family: 'Roboto Slab', serif;
-}
-
-.extra-space{
-    height: 13vh;
-}
-
-.teacher-image{
-    width: 70%;
-    border-radius: 50%;
-    object-fit: scale-down;
-}
-
-.avatar {
-    width: 30vh;
+.illustration{
     height: 30vh;
-    border-radius: 50%;
-}
-
-.middle .inner{
-    height: 100%;
-}
-
-#contactus .middle{
-    flex-grow: 1;
-}
-
-.footer ul {
-    list-style: none;
 }
 
 .footer{
@@ -46,8 +31,43 @@ header{
     background-color: black;
 }
 
-.card-footer{
-    width: 100%;
+.extra-space{
+    height: 13vh;
+}
+
+.middle .inner{
+    height: 100%;
+}
+
+.left-box{
+    padding-top: auto;
+}
+
+.teacher-image{
+    /* width: 70%; */
+    border-radius: 500%;
+    /* object-fit: scale-down; */
+}
+
+#contactus{
+    display: flex;
+    flex-direction: column;
+}
+
+#contactus .middle{
+    flex-grow: 1;
+}
+
+.facebook{
+    color: 	#4267B2;
+}
+
+.instagram{
+    color: palevioletred;
+}
+
+.twitter{
+    color:#1DA1F2;
 }
 
 .phone{
@@ -56,4 +76,103 @@ header{
 
 .location{
     color: blue;
+}
+
+.heading{
+    font-family: 'Roboto Slab', serif;
+}
+
+.sub-heading{
+    font-family: 'Lato', sans-serif;
+}
+
+.avatar {
+	width: 30vh;
+	height: 30vh;
+    border-radius: 50%;
+}
+
+.review-img{
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+}
+
+.left-box, .right-box{
+    margin: 30px 0px;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.special-text{
+    color: black;
+    font-weight: 400;
+}
+
+.image-container{
+    height: 30vh;
+}
+
+.image-container img{
+    height: 100%;
+    object-fit: fill ;
+}
+
+.course-item .card{
+    height: 100%;
+}
+
+.course-item .card .card-header .card-title{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.course1 .card-header{
+    background-color: #f59f0a;
+}
+
+.course2 .card-header{
+    background-color: #10b880;
+}
+
+.course3 .card-header{
+    background-color: #ef4444;
+}
+
+.card-footer{
+    width: 100%;
+}
+
+.logo-container{
+    height: 60px;
+    width: 120px;
+    padding: 7px;
+    background-color: white;
+    border-radius: 100px/50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .logo-container{
+        height: 70px;
+        width: 140px;
+        padding: 6px;   
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .logo-container{
+        height: 65px;
+        width: 130px;
+        padding: 7px;   
+    }
 }
